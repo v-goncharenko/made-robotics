@@ -1,8 +1,9 @@
 # Mobile robotics course at MADE mail.ru
 
-| No  | Lecture                    | Seminar                               | Lecturer              |
-| --- | -------------------------- | ------------------------------------- | --------------------- |
-| 01  | Intro to Robotics. Sensors | Intro to Robot Operating System (ROS) | Vladislav Goncharenko |
+| Date     | Lecture                                     | Seminar                               | Lecturer              |
+| -------- | ------------------------------------------- | ------------------------------------- | --------------------- |
+| 14.09.21 | Intro to Robotics. Sensors                  | Intro to Robot Operating System (ROS) | Vladislav Goncharenko |
+| 21.09.21 | Localization. Recursive bayesian estimation | Kalman and particle filters           | Vladislav Goncharenko |
 
 ## Gratitude and reference
 

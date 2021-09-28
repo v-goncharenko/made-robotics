@@ -71,3 +71,4 @@ rostopic echo /turtle1/cmd_vel
 rosrun turtlesim draw_square
 rostopic echo /turtle1/pose
 rostopic info /turtle1/pose
+rqt_graph

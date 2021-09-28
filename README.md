@@ -4,6 +4,7 @@
 | -------- | ------------------------------------------- | ------------------------------------- | --------------------- |
 | 14.09.21 | Intro to Robotics. Sensors                  | Intro to Robot Operating System (ROS) | Vladislav Goncharenko |
 | 21.09.21 | Localization. Recursive bayesian estimation | Kalman and particle filters           | Vladislav Goncharenko |
+| 28.09.21 | Turtle sim world and ROS basics             | First ROS node, communication types   | Vladislav Goncharenko |
 
 ## Gratitude and reference
 

@@ -23,7 +23,7 @@ class SignalFilter(object):
         # publishing filtered signal
         self.signal_windows.append(signal.data)
         filtered_signal = sum(self.signal_window) / len(self.signal_window)
-        self.signal_pub.publish(filtere_signal)
+        self.signal_pub.publish(filtered_signal)
 
 
 if __name__ == "__main__":

@@ -24,3 +24,32 @@ less first_package/package.xml
 
 # Open file wiht some editor e.g. VSCode
 code . --user-data-dir=/vscode
+
+# Add code files
+mv /signal_generator_node.py first_package/src
+mv /signal_filter_node.py first_package/src
+
+# make executable
+chmod +x first_package/src/signal_generator_node.py
+chmod +x first_package/src/signal_filter_node.py
+
+# Check package is building well
+cd ..
+catkin_make
+
+# Launch ROS and new nodes
+roscore
+# Ctrl + Z (or another terminal)
+rosrun first_package signal_generator_node.py
+rosrun first_package signal_filter_node.py
+
+# Analyze package
+rostopic list
+rostopic info /signal
+rostopic hz /signal
+
+# Visualize topics
+rqt_graph
+
+# Visualize topic contents on plot
+rqt_plot

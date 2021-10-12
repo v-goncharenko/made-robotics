@@ -18,7 +18,7 @@ chmod +x second_package/src/signal_filter_node.py
 
 # NEW: create custom messages
 mkdir second_package/msg
-mv /signal.msg second_package/msg/
+mv /Signal.msg second_package/msg/
 
 # Add to package.xml:
 # <build_depend>message_generation</build_depend>
@@ -67,4 +67,17 @@ rosrun second_package signal_filter_node.py
 
 rostopic info /signal
 
-# rossrv show second_package/GetWindowMedian
+
+# Setup own service
+# Copy service description to appropriate dir
+mkdir src/second_package/srv
+cp /GetWindowMedian.srv src/second_package/srv
+# Compile new service to ROS
+catkin_make
+
+# Update source files to expose service (add handle_get_median)
+# Restart nodes in terminal
+
+rossrv show second_package/GetWindowMedian
+rosservice list
+rosservice call /get_median "{}"

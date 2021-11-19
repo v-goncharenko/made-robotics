@@ -25,7 +25,7 @@ def rotate(points, angle, center):
 def get_polygon_from_position(position) :
     x,y,yaw = position
     points = [(x - 50, y - 100), (x + 50, y - 100), (x + 50, y + 100), (x - 50, y + 100)] 
-    new_points = rotate(points, yaw, (x,y))
+    new_points = rotate(points, yaw * 180 / math.pi, (x,y))
     return Polygon(*list(map(Point, new_points)))
 
 def get_polygon_from_obstacle(obstacle) :
